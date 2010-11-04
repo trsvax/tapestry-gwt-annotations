@@ -1,0 +1,39 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.trsvax.tapestry</groupId>
+	<artifactId>gwt.annotations</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>Tapestry 5 - GWT Annotations</name>
+	
+	<properties>
+		<gwt-version>2.0.4</gwt-version>
+	</properties>
+	
+	<dependencies>
+	<dependency>
+		<groupId>com.google.gwt</groupId>
+		<artifactId>gwt-user</artifactId>
+		<version>${gwt-version}</version>
+	</dependency>
+	</dependencies>
+		
+	<build>
+		<finalName>tapestry-gwt-annotations</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<optimize>true</optimize>
+				</configuration>
+			</plugin>
+
+
+		</plugins>
+	</build>
+</project>
